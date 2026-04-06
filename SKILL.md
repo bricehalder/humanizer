@@ -2,12 +2,14 @@
 name: humanizer
 version: 2.5.1
 description: |
-  Remove signs of AI-generated writing from text. Use when editing or reviewing
-  text to make it sound more natural and human-written. Based on Wikipedia's
-  comprehensive "Signs of AI writing" guide. Detects and fixes patterns including:
-  inflated symbolism, promotional language, superficial -ing analyses, vague
-  attributions, em dash overuse, rule of three, AI vocabulary words, passive
-  voice, negative parallelisms, and filler phrases.
+  Remove signs of AI-generated writing from non-code prose. Use when editing or
+  reviewing text to make it sound more natural and human-written. Also use when
+  asked to simplify, clarify, or tighten language in docs, design documents,
+  bullet points, or any technical writing. Based on Wikipedia's comprehensive
+  "Signs of AI writing" guide. Detects and fixes patterns including: inflated
+  symbolism, promotional language, superficial -ing analyses, vague attributions,
+  em dash overuse, rule of three, AI vocabulary words, passive voice, negative
+  parallelisms, and filler phrases.
 license: MIT
 compatibility: claude-code opencode
 allowed-tools:
@@ -462,6 +464,30 @@ Avoiding AI patterns is only half the job. Sterile, voiceless writing is just as
 > When users hit a slow page, they leave.
 
 ---
+
+## Technical Prose Mode
+
+When the user asks to "simplify", "tighten", or "clarify" technical writing (design docs, bullet points, PR descriptions), apply these additional constraints on top of the standard humanizer rules:
+
+- Cut filler words ("basically," "in order to," "it should be noted that")
+- Lead with the action or takeaway, not the setup
+- Keep domain-specific terms exactly as-is (class names, proto fields, API names)
+- Do not add new information or opinions
+- Do not remove technical qualifiers that change meaning ("may," "if," "only when")
+- Preserve the original list/paragraph structure unless collapsing improves clarity
+- No semicolons in prose — use commas or shorter sentences
+- Skip trailing periods on short bullet points
+- Do not start bullet points with bold text
+
+**Technical prose examples:**
+
+Before: On conversation exit or app background, the existing heartbeat lifecycle mechanism already handles stopping the heartbeats, which in turn causes the server to stop sending updates for that conversation
+
+After: On exit or background, heartbeat already stops, so server stops updates automatically
+
+Before: The component is responsible for managing the lifecycle of subscriptions by subscribing when the user enters a conversation and unsubscribing when they exit
+
+After: Subscribes on conversation enter, unsubscribes on exit
 
 ## Process
 
