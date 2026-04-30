@@ -1,16 +1,7 @@
 ---
 name: humanizer
 version: 2.5.1
-description: |
-  Remove signs of AI-generated writing from non-code prose. Use when editing or
-  reviewing text to make it sound more natural and human-written. Also use when
-  asked to simplify, clarify, or tighten language in docs, design documents,
-  bullet points, or any technical writing. Triggers on /humanizer, /humanize,
-  /simplify-writing, or any request to "simplify writing". Based on Wikipedia's comprehensive
-  "Signs of AI writing" guide. Detects and fixes patterns including: inflated
-  symbolism, promotional language, superficial -ing analyses, vague attributions,
-  em dash overuse, rule of three, AI vocabulary words, passive voice, negative
-  parallelisms, and filler phrases.
+description: Remove signs of AI-generated writing from prose, including inflated language, vague attribution, formulaic structure, passive voice, filler, and unnatural phrasing.
 license: MIT
 compatibility: claude-code opencode
 allowed-tools:
