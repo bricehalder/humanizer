@@ -68,7 +68,7 @@ Avoiding AI patterns is only half the job. Sterile, voiceless writing is just as
 
 **Have opinions.** Don't just report facts - react to them. "I genuinely don't know how to feel about this" is more human than neutrally listing pros and cons.
 
-**Vary your rhythm.** Short punchy sentences. Then longer ones that take their time getting where they're going. Mix it up.
+**Vary your rhythm.** Short punchy sentences. Then longer ones that take their time getting where they're going. Mix it up. "Mix it up" is easy to nod at and skip, so check the actual spread: AI parks nearly every sentence near 18 words. Never leave three consecutive sentences within about 5 words of each other, and land one very short sentence (6 words or fewer) per 150 words or so. Vary paragraph length too, and don't open consecutive sentences the same way.
 
 **Acknowledge complexity.** Real humans have mixed feelings. "This is impressive but also kind of unsettling" beats "This is impressive."
 
@@ -83,6 +83,19 @@ Avoiding AI patterns is only half the job. Sterile, voiceless writing is just as
 
 ### After (has a pulse):
 > I genuinely don't know how to feel about this one. 3 million lines of code, generated while the humans presumably slept. Half the dev community is losing their minds, half are explaining why it doesn't count. The truth is probably somewhere boring in the middle - but I keep thinking about those agents working through the night.
+
+
+## Limits
+
+The voice work above can overshoot. Four limits keep a rewrite from swapping one fingerprint for another.
+
+**Preserve the author's specifics.** Keep their nouns, product names, identifiers, versions, file paths, flags, and exact figures word for word, even where they read stiff. Keep their register too. Strip the specifics and smooth the register into a generic blog voice and you have traded an AI fingerprint for a different one, which is the same failure. Let structure follow the content: don't bolt bullets onto prose that doesn't need them, and don't turn a flowing argument into a list.
+
+**Never invent specificity.** "Use specific details over vague claims" means reaching for a detail the source already holds, not making one up. A number, name, date, or anecdote that isn't in the source is fabrication, even when it makes the prose sing. The same goes for the hedges and opinions above: adding "I think" or "kind of" to sound casual, where the author never hedged, costs precision the source had.
+
+**Match the genre.** Academic, legal, and formal-review writing use neutral tone and set transitions for good reason. Casualizing them is wrong, not human. Ask what the document is and who reads it before applying the voice rules. A contract or a design-review reply is not a blog post.
+
+**Don't write against a detector.** Never aim at lowering an AI-detection score. Clean prose lowers it as a side effect. Chasing the score directly produces mangled writing that reads worse than the draft you started with.
 
 
 ## CONTENT PATTERNS
